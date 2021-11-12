@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container f-center">
+    <div class="color-picker">
+      <div class="color-selector">
+        <label for="red">Red:</label>
+        <input type="range" name="red" id="red" value="0" min="0" max="255" />
+        <label for="green">Green:</label>
+        <input type="range" name="green" id="green" value="0" min="0" max="255" />
+        <label for="blue">Blue:</label>
+        <input type="range" name="blue" id="blue" value="0" min="0" max="255" />
+        <label for="alpha">Alpha:</label>
+        <input type="range" name="alpha" id="alpha" value="255" max="255" min="0" />
+      </div>
+      <label for="result">Result:</label>
+      <div class="result f-center">
+        <div id="colorPicker"></div>
+      </div>
+      <label for="code">Color Code:</label>
+      <div class="color-code" id="colorCode">
+        <span id="text">rgba</span><span id="color">(0,0,0,255)</span>
+      </div>
+    </div>
+    <div id="toast">
+      Copied To Clipboard
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
