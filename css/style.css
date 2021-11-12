@@ -70,7 +70,9 @@ label{
   padding:10px;
   font-size: 1.4rem;
   border-radius: 10px;
-  transition: all 1s;
-  background: #42445A;
-  color: #42445A;
+  transition: all 0.5s;
+  background: transparent;
+  color: transparent;
+  position: absolute;
+  top:90vh;
 }

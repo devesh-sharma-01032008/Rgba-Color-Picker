@@ -4,11 +4,11 @@ function changeColor(red, blue, green, alpha) {
   let g = green.value;
   let a = alpha.value;
   let colorCombination = `rgba(${r},${g},${b},${a})`;
-  const colorPicker = document.getElementById("colorPicker");
-  colorPicker.style.background = colorCombination;
+  const colorPicker = document.querySelector("div.container");
+  colorPicker.style.backgroundColor = colorCombination;
   let color = document.getElementById("color");
   color.innerText = `(${r},${g},${b},${a})`;
-
+  console.log(colorPicker.style.backgroundColor);
 }
 
 const red = document.getElementById("red");
@@ -29,7 +29,7 @@ code.addEventListener("click", (e) => {
   toast.style.color = "black";
   toast.style.background = "white"
   setTimeout(() => {
-    toast.style.color = "#42445A";
-    toast.style.background = "#42445A";
-  }, 1500);
+    toast.style.color = "transparent";
+    toast.style.background = "transparent";
+  }, 500);
 })
