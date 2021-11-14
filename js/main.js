@@ -2,7 +2,7 @@ function changeColor(red, blue, green, alpha) {
   let r = red.value;
   let b = blue.value;
   let g = green.value;
-  let a = alpha.value;
+  let a = alpha.value/10;
   let colorCombination = `rgba(${r},${g},${b},${a})`;
   const colorPicker = document.querySelector("div.container");
   colorPicker.style.backgroundColor = colorCombination;
