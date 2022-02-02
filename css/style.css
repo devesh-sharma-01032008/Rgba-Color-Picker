@@ -52,10 +52,10 @@ html {
   border-radius: 10px;
 }
 
-#text{
+.copy-text{
   color: #C8FF7F;
 }
-#color{
+.copy-color{
   color:#36F0D3;
 }
 
