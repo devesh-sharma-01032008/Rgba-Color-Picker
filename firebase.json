@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "rgba-color-picker",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
